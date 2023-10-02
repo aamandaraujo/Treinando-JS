@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Alteração com querySelectorAll</title>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <button onclick="alterarItens()">Alterar Itens</button>
+
+    <script>
+        function alterarItens(){
+            var cervo = document.querySelectorAll("li");
+            cervo.forEach(function(cervos){
+                cervos.textContent += " - novo conteúdo adicionado";
+            });
+        }
+    </script>
+</body>
+</html>
